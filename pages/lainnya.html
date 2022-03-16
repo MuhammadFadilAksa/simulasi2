@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>Tunai</title>
+</head>
+
+<body class="bg-blue-600">
+    <div class="text-white font-bold text-4xl text-center mt-14">
+        <h1>PILIH JENIS TRANSAKSI</h1>
+    </div> 
+
+        <div class="flex justify-center mt-14 space-x-56 text-white font-bold text-4xl">
+            <div>
+                <ul class="space-y-16">
+                    <li><button onclick="penarikan()"><- PENARIKAN</button></li>
+                    <li><button onclick="transfer()"><- TRANSFER</button></li>
+                    <li><button onclick="pembelian()"><- PEMBELIAN</button></li>
+                    <li><button onclick="lainnya()"><- LAINNYA</button></li>
+                </ul>
+            </div>
+
+            <div class="text-right">
+                <ul class="space-y-16">
+                    <li><button onclick="inforekening()">INFO REKENING -></button></li>
+                    <li><button onclick="pembayaran()">PEMBAYARAN -></button></li>
+                    <li><button onclick="ubahpin()">UBAH PIN -></button></li>     
+                    <li><button onclick="keluar()">KELUAR -></button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+    <script>
+        function keluar() {
+            window.open('ambilkartu.html', '_blank')
+        }
+
+        function lainnya() {
+            window.open('tunai.html', '_blank')
+        }
+    </script>
+</html>
